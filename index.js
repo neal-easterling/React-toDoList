@@ -27,8 +27,11 @@ function App(){
 
   return(
     <>
+    <div className="app">
+      <h1>ToDo</h1>
       {todos.map((todo, i) => <Todo index={i} key={i} todo={todo} remove={removeTodo} />)}
       <TodoForm addTodo={addTodo} />
+    </div>
     </>
   );
 }
